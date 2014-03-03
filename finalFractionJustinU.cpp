@@ -14,7 +14,6 @@ using namespace std;
 FinalFractionJustinU::FinalFractionJustinU(void) { 
 	num = new int(0);
 	denom = new int(1);
-	cout << "Creating Fraction()" << endl;
 }
 
 //Constructor for inputs
@@ -23,28 +22,24 @@ FinalFractionJustinU::FinalFractionJustinU(int a, int b) {
 	denom = new int(1);
 	setDenom(b);
 	reduce();
-	cout << "Creating Fraction()" << endl;
 }
 
 //Conversion Constructor
 FinalFractionJustinU::FinalFractionJustinU(int a) { 
 	num = new int(a);
 	denom = new int(1);
-	cout << "Creating Fraction()" << endl;
 }
 
 //Copy Constructor
 FinalFractionJustinU::FinalFractionJustinU(const FinalFractionJustinU& old) {
 	num = new int(old.getNum());
 	denom = new int(old.getDenom());
-	cout << "Creating Fraction()" << endl;
 }
 
 //Destructor
 FinalFractionJustinU::~FinalFractionJustinU() {
 	delete num;
 	delete denom;
-	cout << "Deleting Fraction()" << endl;
 }
 
 //Get numerator
