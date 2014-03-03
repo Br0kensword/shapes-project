@@ -236,10 +236,6 @@ void menu() {
 			displayVolumeJustinU(allAry, 12, "Box", 0);
 			break;
 		case 7: // Line 4900 
-			cout << "Code was eaten by Komodo Dragons!!!" << endl;
-			//displayOrigin(allAry, 12, "all", 0);
-			break;
-		case 8: // Line 5000 
 			cout << "\n\tThank you! Have fun! ..." << endl;
 			break;
 		default: // Line 5100 
@@ -266,8 +262,7 @@ void printMenu() {
 		<< "\n* 4. Display Areas from Smallest to Largest (All Rectangles) *" 
 		<< "\n* 5. Display Volumes from Smallest to Largest (All Cylinders)*" 
 		<< "\n* 6. Display Volumes from Smallest to Largest (All Boxes)    *" 
-		<< "\n* 7. Get and Display Rectangle Closest to Origin             *" 
-		<< "\n* 8. Quit                                                    *" 
+		<< "\n* 7. Quit                                                    *" 
 		<< "\n**************************************************************";
 
 	return; 
