@@ -15,34 +15,28 @@ using namespace std;
 
 FinalCylinderJustinU::FinalCylinderJustinU(void) : ShapeJustinU("Cylinder"), FinalCircleJustinU() {
 	height = new FinalFractionJustinU(1);
-	cout << "Creating Cylinder()" << endl;
 }
 
 FinalCylinderJustinU::~FinalCylinderJustinU(void) {
 	delete height;
-	cout << "Creating Cylinder()" << endl;
 }
 
 FinalCylinderJustinU::FinalCylinderJustinU(const FinalCylinderJustinU& old) : ShapeJustinU("Cylinder"), FinalCircleJustinU(old) {
 	height = new FinalFractionJustinU(old.getHeight());
-	cout << "Creating Cylinder()" << endl;
 }
 
 FinalCylinderJustinU::FinalCylinderJustinU(const FinalPointJustinU& cen1, const FinalFractionJustinU& rad1, const FinalFractionJustinU& h) : ShapeJustinU("Cylinder"), FinalCircleJustinU(cen1, rad1) {
 	height = new FinalFractionJustinU(h);
-	cout << "Creating Cylinder()" << endl;
 }
 
 FinalCylinderJustinU::FinalCylinderJustinU(const FinalCircleJustinU& oldC, const FinalFractionJustinU& h) : ShapeJustinU("Cylinder"), FinalCircleJustinU(oldC) {
 	height = new FinalFractionJustinU(h);
-	cout << "Creating Cylinder()" << endl;
 }
 
 FinalCylinderJustinU& FinalCylinderJustinU::operator=(const FinalCylinderJustinU& old) {
 	*height = old.getHeight();
 	setCen(old.getCen());
 	setRad(old.getRad());
-	cout << "Creating Cylinder()" << endl;
 
 	return *this;
 }
