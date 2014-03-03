@@ -10,7 +10,6 @@ using namespace std;
 FinalPointJustinU::FinalPointJustinU(void) {
 	x = FinalFractionJustinU();
 	y = FinalFractionJustinU();
-	cout << "Creating Point()" << endl;
 }
 
 FinalPointJustinU::~FinalPointJustinU(void) {
@@ -20,25 +19,21 @@ FinalPointJustinU::~FinalPointJustinU(void) {
 FinalPointJustinU::FinalPointJustinU(const FinalFractionJustinU& run, const FinalFractionJustinU& rise) {
 	x = FinalFractionJustinU(run);
 	y = FinalFractionJustinU(rise);
-	cout << "Creating Point()" << endl;
 }
 
 FinalPointJustinU::FinalPointJustinU(int run, int rise) {
 	x = FinalFractionJustinU(run);
 	y = FinalFractionJustinU(rise);
-	cout << "Creating Point()" << endl;
 }
 
 FinalPointJustinU::FinalPointJustinU(const FinalPointJustinU& old) {
 	x = FinalFractionJustinU(old.getX());
 	y = FinalFractionJustinU(old.getY());
-	cout << "Creating Point()" << endl;
 }
 
 FinalPointJustinU& FinalPointJustinU::operator=(const FinalPointJustinU& old) {
 	setX(old.getX());
 	setY(old.getY());
-	cout << "Creating Point()" << endl;
 
 	return *this;
 }
