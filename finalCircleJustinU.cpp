@@ -16,36 +16,30 @@ using namespace std;
 FinalCircleJustinU::FinalCircleJustinU(void) : ShapeJustinU("Circle"), PI(157, 50) {
 	cen = new FinalPointJustinU();
 	rad = FinalFractionJustinU();
-	cout << "Creating Circle()" << endl;
 }
 
 FinalCircleJustinU::~FinalCircleJustinU(void) {
 	delete cen;
-	cout << "Deleting Circle()" << endl;
 }
 
 FinalCircleJustinU::FinalCircleJustinU(const FinalCircleJustinU& old) : ShapeJustinU("Circle"), PI(157, 50) {
 	cen = new FinalPointJustinU(old.getCen());
 	rad = FinalFractionJustinU(old.getRad());
-	cout << "Creating Circle()" << endl;
 }
 
 FinalCircleJustinU::FinalCircleJustinU(const FinalPointJustinU& cen1, const FinalFractionJustinU& rad1) : ShapeJustinU("Circle"), PI(157, 50) {
 	cen = new FinalPointJustinU(cen1);
 	rad = FinalFractionJustinU(rad1);
-	cout << "Creating Circle()" << endl;
 }
 
 FinalCircleJustinU::FinalCircleJustinU(const FinalFractionJustinU& rad1) : ShapeJustinU("Circle"), PI(157, 50) {
 	cen = new FinalPointJustinU();
 	rad = FinalFractionJustinU(rad1);
-	cout << "Creating Circle()" << endl;
 }
 
 FinalCircleJustinU& FinalCircleJustinU::operator=(const FinalCircleJustinU& old) {
 	setCen(old.getCen());
 	setRad(old.getRad());
-	cout << "Creating Circle()" << endl;
 
 	return *this;
 }
