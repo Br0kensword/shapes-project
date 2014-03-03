@@ -15,35 +15,29 @@ using namespace std;
 
 FinalBoxJustinU::FinalBoxJustinU(void) : ShapeJustinU("Box"), FinalRectangleJustinU() {
 	height = new FinalFractionJustinU(1);
-	cout << "Creating Rectangle()" << endl;
 	}
 
 FinalBoxJustinU::~FinalBoxJustinU(void) {
 	delete height;
-	cout << "Deleting Rectangle()" << endl;
 	}
 
 FinalBoxJustinU::FinalBoxJustinU(FinalPointJustinU& uR, FinalPointJustinU& lL, FinalFractionJustinU& h) 
 				: ShapeJustinU("Box"), FinalRectangleJustinU(uR, lL) {
 	height = new FinalFractionJustinU(h);
-	cout << "Creating Rectangle()" << endl;
 	}
 
 FinalBoxJustinU::FinalBoxJustinU(FinalPointJustinU& uR, FinalPointJustinU& lL, int h) 
 				: ShapeJustinU("Box"), FinalRectangleJustinU(uR, lL) {
 	height = new FinalFractionJustinU(h);
-	cout << "Creating Rectangle()" << endl;
 	}
 
 FinalBoxJustinU::FinalBoxJustinU(const FinalRectangleJustinU& rec, const FinalFractionJustinU& h) 
 				: ShapeJustinU("Box"), FinalRectangleJustinU(rec) {
 	height = new FinalFractionJustinU(h);
-	cout << "Creating Rectangle()" << endl;
 }
 
 FinalBoxJustinU::FinalBoxJustinU(const FinalBoxJustinU& old) : ShapeJustinU(old), FinalRectangleJustinU(old) {
 	height = new FinalFractionJustinU(old.getHeight());
-	cout << "Creating Rectangle()" << endl;
 }
 
 FinalBoxJustinU& FinalBoxJustinU::operator=(const FinalBoxJustinU& old) {
@@ -51,7 +45,6 @@ FinalBoxJustinU& FinalBoxJustinU::operator=(const FinalBoxJustinU& old) {
 	setLowLeft(old.getLowLeft()); 
 	setHeight(old.getHeight());
 	setName(old.getName());
-	cout << "Creating Rectangle()" << endl;
 
 	return *this;
 }
