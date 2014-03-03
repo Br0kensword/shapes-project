@@ -16,36 +16,30 @@ using namespace std;
 FinalRectangleJustinU::FinalRectangleJustinU() : ShapeJustinU("Rectangle") {
 	upRight = new FinalPointJustinU();
 	lowLeft = FinalPointJustinU();
-	cout << "Creating Rectangle()" << endl;
 }
 
 FinalRectangleJustinU::~FinalRectangleJustinU() {
 	delete upRight;
-	cout << "Deleting Rectangle()" << endl;
 }
 
 FinalRectangleJustinU::FinalRectangleJustinU(const FinalRectangleJustinU& old) : ShapeJustinU("Rectangle") {
 	upRight = new FinalPointJustinU(old.getUpRight());
 	lowLeft = FinalPointJustinU(old.getLowLeft());
-	cout << "Creating Rectangle()" << endl;
 }
 
 FinalRectangleJustinU::FinalRectangleJustinU(const FinalPointJustinU& upR, const FinalPointJustinU& lowL) : ShapeJustinU("Rectangle") {
 	upRight = new FinalPointJustinU(upR);
 	lowLeft = FinalPointJustinU(lowL);
-	cout << "Creating Rectangle()" << endl;
 }
 
 FinalRectangleJustinU::FinalRectangleJustinU(const FinalFractionJustinU& length, const FinalFractionJustinU& width) : ShapeJustinU("Rectangle") {
 	upRight = new FinalPointJustinU(length, width);
 	lowLeft = FinalPointJustinU();
-	cout << "Creating Rectangle()" << endl;
 }
 
 FinalRectangleJustinU& FinalRectangleJustinU::operator=(const FinalRectangleJustinU& old) {
 	setUpRight(old.getUpRight());
 	setLowLeft(old.getLowLeft());
-	cout << "Creating Rectangle()" << endl;
 
 	return *this; 
 }
