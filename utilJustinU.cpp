@@ -96,25 +96,6 @@ void getSecondSmallestVolumeJustinU(ShapeJustinU**& objAry, int size, string pSt
 
 	return;
 }
-/**
-void displayOrigin(ShapeJustinU**& objAry, int size, string pString, int single) {
-		bool finished = false;
-
-	while (!finished) {
-		finished = true;
-		for (int i = 0; i < size - 1; i++) {
-			if (((*(objAry + i))->getUpRight() + (*(objAry + i))->getLowLeft() )     < ((*(objAry + i + 1))->getVolume())) {
-				swap((*(objAry + i)), (*(objAry + i + 1)));
-				finished = false;
-			}
-		}
-	}
-	
-	printObj(objAry, size, pString, single);
-
-	return;
-}
-**/
 
 void displayAreaJustinU(ShapeJustinU**& objAry, int size, string pString, int single) {
 	bool finished = false;
