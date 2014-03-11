@@ -1,1 +1,3 @@
-CS projects can be fun at times.....
+A C++ program that computes the areas and volumes of various 2D and 3D shapes comprised of points. All measurments are
+made in fractions to avoid float overhead. This project was designed to work with random class members given as either
+ints or int pointers, hence the heavy use of functions.
